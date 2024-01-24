@@ -1,0 +1,8 @@
+This sql file contains everything that is needed to create the full database without any movies.
+It contains a create database query so no need to create it up front.
+
+The first time you start phpmoviedb it will list a empty listpage as there are no movies
+
+Default login credentials:
+Username: admin
+Password: admin
