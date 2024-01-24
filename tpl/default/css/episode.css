@@ -1,0 +1,153 @@
+/*----------------------- Episodes tabs Styles ------------------------------ */
+
+#episodestabs {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin-bottom: -2px;
+}
+
+#episodestabs .episodesList {
+  padding: 0px 20px 0px 14px;
+}
+
+#episodestabs input[type="radio"] {
+  display: none;
+}
+
+#episodestabs label {
+  display: inline-block;
+  margin: 0 1px -1px;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  color: #000000;
+  border-bottom: 4px solid transparent;
+}
+
+#episodestabs .tab {
+  order: 1;
+  display: none;
+  padding: 0px 0 0;
+  margin-left: -13px;
+  margin-right: -19px;
+  margin-bottom: 15px;
+  margin-top: 1px;
+}
+
+#episodestabs input:checked + label {
+  border-bottom: 4px solid #f5c518;
+  cursor: default;
+}
+
+#episodestabs input[type='radio']:checked + label + .tab {
+  display: block;
+}
+
+#episodestabs label:hover {
+  cursor: pointer;
+  background-color: #EEEEEE;
+}
+
+#episodestabs input:checked + label:hover {
+  background-color: transparent;
+}
+
+#episodestabs .episodeColorRow {
+  background-color: #ffffff;
+  padding: 12px 0px 12px 0px;
+  font-size: 13px;
+  float: left;
+  border-bottom: 1px solid #cccccc;
+}
+
+#episodestabs .episodeColorRow a {
+  color: #136CB2;
+}
+
+#episodestabs .episodeColorRow a:hover {
+  color: #136CB2;
+}
+
+#episodestabs .episodeColorRow .airdate {
+  float: right;
+  color: #666666;
+  font-size: 11px;
+}
+
+#episodestabs .episodeColorRow .link {
+  width: 340px;
+  display: inline-block;
+}
+
+#episodestabs .episodeColorRow .plot {
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+#episodes {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px;
+  padding: 20px 19px 0px 21px;
+  background-color: #ffffff;
+}
+
+#episodes #episodesDiv1 {
+  margin-bottom: 13px;
+  padding-left: 0px;
+  margin-left: -1px;
+}
+
+#episodes #episodesDiv1 H2 {
+  color: #000000;
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#episodes #episodesDiv2 {
+  line-height: 140%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin-left: -1px;
+}
+
+.episodeImg {
+  float: left;
+}
+
+.episodeImg:hover {
+  filter: brightness(93%);
+  transition: opacity 0.35s;
+}
+
+.episodeImg a:hover {
+  text-decoration: none;
+}
+
+.episodeImg .episodeImgShadow {
+  border: none;
+  vertical-align: middle;
+  width: 224px;
+  height: 126px;
+}
+
+.episodeColorRow .titleDetails a {
+  font-weight: bold;
+}
+
+.episodeColorRow .titleDetails a:hover {
+  text-decoration: underline;
+}
+
+.titleDetails {
+  float: left;
+  width: 425px;
+  margin-left: 20px;
+}

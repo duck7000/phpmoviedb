@@ -1,0 +1,1042 @@
+#AddMain {
+  float: left;
+  margin: 0px;
+  padding: 0px 20px 20px 20px;
+  background-color: #f8f8f8;
+}
+
+.trigger b{
+  text-decoration: underline;
+  color: #999999;
+}
+
+.trigger b:hover{
+  text-decoration: underline;
+  color: #5a5a5a;
+}
+
+#AddMain strong{
+  color: #0358ae;
+}
+
+#searchForm {
+  float: left;
+  margin: 0px;
+  width: 100%;
+  border-bottom: double 10px #999;
+}
+
+#searchForm div {
+  padding: 40px 0px;
+  text-align: center;
+  width: 100%;
+}
+
+input.searchInput1 {
+  width: 545px;
+  margin-top: 3px;
+  border: 2px solid #34679F;
+}
+
+#resultsList {
+  width: 100%;
+  float: left;
+}
+
+#resultsList table {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#resultsList table tr {
+  line-height: 35px;
+}
+
+.resultsColorRow:nth-child(even) {
+  background: #fbfbfb;
+  border: 2px solid white;
+}
+.resultsColorRow:nth-child(odd) {
+  background: #f6f6f5;
+  border: 2px solid white;
+}
+
+#resultsList table .td1 {
+  padding-left: 10px;
+  width: 875px;
+}
+
+#resultsList table .td1 a {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-weight: bold;
+}
+
+#resultsList table .td2 {
+  text-align:right;
+  padding-right: 5px;
+}
+
+#resultsList table .td2 img {
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+
+#noResults {
+  width: 100%;
+  float: left;
+}
+
+#noResults div {
+  margin-top: 20px;
+}
+
+.inputerror {
+  color: #A50010;
+  text-align: center;
+  margin-top: -5px;
+}
+
+#allReadyKnown {
+  width: 100%;
+  float: left;
+  text-align: center;
+  background-color: #ffff00;
+  margin-top: -20px;
+}
+
+#mainRight {
+  float: right;
+  width: 252px;
+  border-left: solid 3px #999;
+  padding-left: 19px;
+  height: 600px;
+}
+
+#mainRightUpdate {
+  float: right;
+  width: 252px;
+  border-left: solid 3px #999;
+  padding-left: 19px;
+  height: 600px;
+}
+
+#mainRightDiv1 {
+  float: left;
+}
+
+#mainRightDiv2 {
+  float: right;
+  margin-right: -1px;
+}
+
+#mainRightPhoto {
+  float: left;
+  clear: both;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.PhotoCoverError {
+  color: red;
+  margin-top: -16px;
+}
+
+#mainRightPhoto #photo {
+  max-height: 185px;
+  max-width: 185px;
+}
+
+.browse {
+  float: right;
+  text-align: right;
+  width: 50%;
+  padding-bottom: 16px;
+}
+
+.searchAnchors {
+  float: left;
+  margin-top: 1px;
+}
+
+.searchAnchors .searchAnchorsSeparator {
+  margin-left: 5px;
+}
+
+.searchAnchors a {
+  text-decoration: none;
+}
+
+#mainRightCover {
+  float: left;
+  clear: both;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 252px;
+  text-align: center;
+  height: 205px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainRightCover #fullCover {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#removeCoverLink {
+  text-align: right;
+  margin-top: -195px;
+  margin-right: -25px;
+  margin-left: 10px;
+}
+
+#removeCoverLink img{
+  max-width: 16px;
+  max-height: 16px;
+}
+
+#removeCoverLink a:hover{
+  text-decoration: underline;
+}
+
+#mainTitle {
+  float: left;
+  width: 675px;
+  height: 585px;
+  margin-top: 15px;
+}
+
+#mainTitle #buttonAdd {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+#mainBase {
+  width: 100%;
+}
+
+#mainBase #imdbTitle {
+  width: 100%;
+  float: left;
+}
+
+#mainBase #imdbTitle #imdb {
+  width: 75px;
+  float: left;
+}
+
+#mainBase #imdbTitle #imdb label {
+  display: block;
+  width: 60px;
+}
+
+#mainBase #imdbTitle #imdb input {
+  display: block;
+  width: 65px;
+}
+
+#mainBase #imdbTitle #title {
+  width: 575px;
+  padding: 0px;
+  margin: 0px;
+  float: right;
+}
+
+#mainBase #imdbTitle #title label {
+  display: block;
+  width: 60px;
+}
+
+#mainBase #imdbTitle #title span {
+  color: red;
+}
+
+#mainBase #imdbTitle #title input {
+  width: 565px;
+}
+
+#mainBase #alsoKnownAs {
+  width: 512px;
+  float: left;
+  margin-top: 18px;
+}
+
+#mainBase #alsoKnownAs div {
+  width: 100%;
+  float: left;
+}
+
+#mainBase #alsoKnownAs label {
+  display: block;
+}
+
+#mainBase #alsoKnownAs span {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+#mainBase #alsoKnownAs textarea {
+  height: 285px;
+  width: 500px;
+}
+
+#mainBase #plotOutline {
+  width: 675px;
+  float: left;
+  margin-top: 18px;
+}
+
+#mainBase #plotOutline label {
+  display: block;
+}
+
+#mainBase #plotOutline textarea {
+  height: 100px;
+  width: 663px;
+}
+
+#mainBase #typeRow {
+  width: 135px;
+  float: right;
+  margin-top: 18px;
+}
+
+#mainBase #typeRow #type {
+  float: left;
+}
+
+#mainBase #typeRow label {
+  display: block;
+}
+
+#mainBase #typeRow #type input {
+  width: 125px;
+}
+
+#mainBase #typeRow #top250Div {
+  float: left;
+  margin-top: 15px;
+}
+
+#mainBase #typeRow #top250Div input {
+  width: 45px;
+}
+
+#mainBase #typeRow #yearDiv {
+  float: left;
+  margin-top: 15px;
+  clear: left;
+}
+
+#mainBase #typeRow #yearDiv span {
+  color: red;
+}
+
+#mainBase #typeRow #yearDiv input {
+  width: 45px;
+}
+
+#mainBase #typeRow #endyearDiv {
+  float: left;
+  margin-top: 15px;
+  margin-left: 25px;
+}
+
+#mainBase #typeRow #endyearDiv span {
+  color: red;
+}
+
+#mainBase #typeRow #endyearDiv input {
+  width: 45px;
+}
+
+#mainBase #typeRow #ratingDiv {
+  float: left;
+  margin-top: 0px;
+  clear: left;
+  margin-top: 15px;
+}
+
+#mainBase #typeRow #ratingDiv input {
+  width: 45px;
+}
+
+#mainBase #typeRow #metascoreDiv {
+  float: left;
+  margin-top: 15px;
+  clear: left;
+}
+
+#mainBase #typeRow #metascoreDiv input {
+  width: 45px;
+}
+
+#mainDetails {
+  float: left;
+  width: 100%;
+  border-top: 3px solid #999;
+  padding-top: 26px;
+  padding-bottom: 16px;
+}
+
+#mainDetailsDiv {
+  width: 100%;
+  float: left;
+}
+
+#mainDetails #languages {
+  float: left;
+}
+
+.mainDetailsLabel {
+  display: block;
+}
+
+#mainDetails .span {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+#mainDetailsDiv .textareaTop {
+  height: 80px;
+  width: 215px;
+}
+
+#mainDetailsDiv .mainDetailsDiv1 {
+  float: left;
+  margin-left: 20px;
+}
+
+#mainDetailsDiv #mainDetailsDiv2 div{
+  margin-top: 5px;
+}
+
+#mainDetailsDiv #mainDetailsDiv2 .noWish{
+  margin-top: 15px;
+}
+
+#mainDetailsDiv #mainDetailsDiv2Update {
+  float: right;
+}
+
+.mainDetailsLabel1 {
+  padding-right: 10px;
+}
+
+#mainDetailsDiv .mainDetailsOwn {
+  float: left;
+  margin-left: 40px;
+  width: 220px;
+  margin-top: 16px;
+}
+
+#mainDetailsDiv .mainDetailsLoaned {
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 225px;
+  height: 60px;
+  margin-top: 16px;
+}
+
+#mainDetailsDiv .mainDetailsLoaned #mainDetailsLoanedDiv2 div {
+  margin-top: 5px;
+  width: 60px;
+  float: left;
+}
+
+#mainDetailsDiv #tr_loandate {
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 225px;
+}
+
+#mainDetailsDiv .loandateNone {
+  display: none;
+}
+
+#mainDetailsDiv .loandateInit {
+  display: initial;
+}
+
+#mainDetailsDiv #loanName {
+  float: left;
+  margin-top: 10px;
+}
+
+#mainDetailsDiv #loanName input {
+  width: 214px;
+}
+
+#mainDetailsDiv #loanDate {
+  float: left;
+  margin-top: 10px;
+}
+
+#mainDetailsDiv #loanDate input {
+  width: 93px;
+}
+
+#mainDetailsDiv #youtubeTrailer textarea{
+  width: 708px;
+  height: 80px;
+}
+
+#mainDetailsDiv #youtubeTrailer #template{
+  float: right;
+}
+
+#mainDetailsDiv #youtubeTrailer {
+  float: left;
+  margin-top: 18px;
+  width: 720px;
+}
+
+#mainDetailsDiv #youtubeTrailer img{
+  margin-bottom: -3px;
+  margin-left: 5px;
+}
+
+#mainDetailsDiv #youtubeTrailerDiv1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+#mainDetailsDiv #youtubeTrailerDiv2 {
+  float: left;
+  margin-top: 16px;
+  display: block;
+  margin-bottom: -14px;
+  display: none;
+}
+
+#mainDetailsDiv #youtubeTrailerDiv2Add {
+  float: left;
+  margin-top: 16px;
+  display: block;
+  margin-left: -20px;
+  margin-bottom: -14px;
+}
+
+#mainDetailsDiv #youtubeTrailerDiv2Add button {
+  margin-bottom: 0px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  margin-left: 20px;
+}
+
+#mainDetailsDiv #youtubeTrailerDiv2 button {
+  width: 116px;
+  margin-bottom: -2px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+  margin-left: 0px;
+}
+
+#mainDetailsDiv #youtubeTrailer input {
+  width: 98.8%;
+}
+
+#mainDetailsDiv #youtubeTrailer #youtubeTrailertoggle{
+  float: left;
+  margin-top: 16px;
+  display: block;
+  margin-left: -20px;
+  margin-bottom: -14px;
+}
+
+#mainDetailsDiv #youtubeTrailer #youtubeTrailertoggle button{
+  width: 116px;
+  margin-bottom: -2px;
+  padding-bottom: 4px;
+  padding-top: 4px;
+}
+
+.trailerDivYoutube {
+  float: right;
+  margin-top: -44px;
+  margin-bottom: 0px;
+  width: 83.5%;
+}
+
+.trailerDiv {
+  float: left;
+  margin-left: 0px;
+  margin-top: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+#mainDetailsDiv #awards {
+  float: right;
+  margin-top: 18px;
+  margin-left: 20px;
+  width: 227px;
+}
+
+#mainDetailsDiv #awards textarea{
+  width: 215px;
+  height: 80px;
+}
+
+#mainDetailsDiv #recommendationsDiv {
+  width: 100%;
+  float: left;
+  margin-top: 16px;
+}
+
+#mainDetailsDiv #recommendationsDiv .textareaRecommendations {
+  height: 290px;
+  width: 98.7%;
+}
+
+#mainDetailsDiv #notesDiv {
+  float: left;
+  margin-top: 16px;
+}
+
+#mainDetailsDiv #notesDiv .textareaNotes {
+  height: 120px;
+  width: 470px;
+}
+
+/*----------------------- Main Media Styles ------------------------------ */
+#mainMedia {
+  float: left;
+  width: 100%;
+  border-top: 3px solid #999;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#mainMedia h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#mainMedia .mainMediaDiv {
+  width: 672px;
+  float: left;
+}
+
+#mainMedia .mainMediaDiv2 {
+  margin-top: 19px;
+}
+
+#mainMedia #runtimeDiv {
+  float: left;
+}
+
+#mainMedia label {
+  display: block;
+}
+
+#mainMedia #runtimeDiv span {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+#mainMedia #runtimeDiv input {
+  width: 30px;
+}
+
+#mainMedia #barcodeDiv {
+  float: left;
+  margin-left: 60px;
+}
+
+#mainMedia #barcodeDiv input {
+  width: 120px;
+}
+
+#mainMedia #videoDiv {
+  float: left;
+  margin-left: 40px;
+}
+
+#mainMedia #videoDiv input {
+  width: 330px;
+  margin-right: 0px;
+}
+
+#mainMedia #extraMediaDiv {
+  float: right;
+}
+
+#mainMedia #extraMediaDiv span {
+  float: right;
+}
+
+#mainMedia #extraMediaDiv textarea {
+  height: 266px;
+  width: 255px;
+}
+
+#mainMedia #mediaSubtitleDiv {
+  float: left;
+  margin-left: 0px;
+}
+
+#mainMedia #mediaSubtitleDiv input {
+  width: 110px;
+}
+
+#mainMedia #regioncodeDiv {
+  float: left;
+  margin-left: 36px;
+}
+
+#mainMedia #regioncodeDiv input {
+  width: 75px;
+  background-color: #faffbd;
+}
+
+#mainMedia #audio1Div {
+  float: left;
+  margin-left: 84px;
+}
+
+#mainMedia #audio1Div input {
+  width: 330px;
+}
+
+#mainMedia #externalSubtitleDiv {
+  float: left;
+  margin-left: 0px;
+}
+
+#mainMedia #externalSubtitleDiv input {
+  width: 110px;
+}
+
+#mainMedia #formatDiv {
+  float: left;
+  margin-left: 36px;
+}
+
+#mainMedia #formatDiv input {
+  width: 100px;
+}
+
+#mainMedia #formatDiv label {
+  display: block;
+}
+
+#mainMedia #audio2Div {
+  float: left;
+  margin-left: 59px;
+}
+
+#mainMedia #audio2Div input {
+  width: 330px;
+}
+
+#mainMedia #mediacertificationsDiv {
+  float: left;
+  margin-left: 0px;
+}
+
+#mainMedia #mediacertificationsDiv input {
+  width: 255px;
+}
+
+#mainMedia #mediacountryDiv {
+  float: left;
+  margin-left: 60px;
+}
+
+#mainMedia #mediacountryDiv input {
+  width: 330px;
+}
+
+#mainMedia #mediaEditionDiv {
+  float: left;
+  margin-left: 0px;
+}
+
+#mainMedia #mediaEditionDiv input {
+  width: 255px;
+}
+
+
+
+#mainStoryline {
+  float: left;
+  width: 100%;
+  border-top: 3px solid #999;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#mainStoryline label {
+  display: block;
+}
+
+#mainStoryline span {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+#mainStoryline h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#mainStoryline #mainStorylineDiv {
+  width: 100%;
+  float: left;
+}
+
+#mainStoryline #mainStorylineDiv #plotDiv {
+  float: left;
+  width: 670px;
+}
+
+#mainStoryline #mainStorylineDiv #plotDiv textarea {
+  height: 178px;
+  width: 658px;
+}
+
+#mainStoryline #mainStorylineDiv #keywordsDiv {
+  float: right;
+  width: 270px;
+}
+
+#mainStoryline #mainStorylineDiv #keywordsDiv textarea {
+  height: 178px;
+  width: 258px;
+}
+
+#mainStoryline #mainStorylineDiv #taglinesDiv {
+  float: left;
+  margin-top: 16px;
+  width: 670px;
+}
+
+#mainStoryline #mainStorylineDiv #taglinesDiv textarea {
+  height: 178px;
+  width: 658px;
+}
+
+#mainStoryline #mainStorylineDiv #certificationsDiv {
+  float: right;
+  margin-top: 16px;
+  width: 270px;
+}
+
+#mainStoryline #mainStorylineDiv #certificationsDiv textarea {
+  height: 178px;
+  width: 258px;
+}
+
+
+#mainCastCrew {
+  float: left;
+  width: 100%;
+  border-top: 3px solid #999;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+#mainCastCrew h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#mainCastCrew #mainCastCrewDiv {
+  width: 100%;
+  float: left;
+}
+
+#mainCastCrew #mainCastCrewDiv #directorDiv {
+  float: left;
+  width: 500px;
+}
+
+#mainCastCrew #mainCastCrewDiv #directorDiv textarea {
+  height: 148px;
+}
+
+#mainCastCrew label {
+  display: block;
+}
+
+#mainCastCrew span {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+#mainCastCrew #mainCastCrewDiv #castDivEdit {
+  float: right;
+}
+
+#mainCastCrew #mainCastCrewDiv #castDivEdit textarea {
+  height: 535px;
+}
+
+#mainCastCrew #mainCastCrewDiv #creatorDiv {
+  float: left;
+  margin-top: 16px;
+}
+
+#mainCastCrew #mainCastCrewDiv #creatorDiv textarea {
+  height: 75px;
+}
+
+#mainCastCrew #mainCastCrewDiv #writerDiv {
+  float: left;
+  margin-top: 16px;
+}
+
+#mainCastCrew #mainCastCrewDiv #writerDiv textarea {
+  height: 148px;
+}
+
+#mainCastCrew #mainCastCrewDiv #producerDiv {
+  float: left;
+  margin-top: 16px;
+  clear: left;
+}
+
+#mainCastCrew #mainCastCrewDiv #producerDiv textarea {
+  height: 148px;
+}
+
+#mainCastCrew #mainCastCrewDiv #composerDiv {
+  float: left;
+  margin-top: 16px;
+  clear: left;
+}
+
+#mainCastCrew #mainCastCrewDiv #composerDiv textarea {
+  height: 148px;
+}
+
+#mainCastCrew #mainCastCrewDiv #principalCreditsDiv {
+  float: right;
+  margin-top: 16px;
+}
+
+#mainCastCrew #mainCastCrewDiv #principalCreditsDiv textarea {
+  height: 148px;
+}
+
+#mainDidYouKnow {
+  float: left;
+  width: 100%;
+  border-top: 3px solid #999;
+  padding-top: 16px;
+}
+
+#mainDidYouKnow h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv {
+  width: 100%;
+  float: left;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #triviaDiv {
+  float: left;
+  width: 100%;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #triviaDiv textarea {
+  height: 200px;
+  width: 98.8%;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #quotesDiv {
+  float: left;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #quotesDiv textarea {
+  height: 200px;
+  width: 98.8%;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #alternateversionsDiv {
+  float: left;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #alternateversionsDiv textarea {
+  height: 200px;
+  width: 98.8%;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #soundtracksDiv {
+  float: left;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #locationsDiv textarea {
+  height: 200px;
+  width: 98.8%;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #locationsDiv {
+  float: left;
+  width: 100%;
+  margin-top: 16px;
+}
+
+#mainDidYouKnow #mainDidYouKnowDiv #soundtracksDiv textarea {
+  height: 200px;
+  width: 98.8%;
+}
+
+#mainSeasons {
+  float: left;
+  width: 100%;
+  border-top: 3px solid #999;
+  margin-top: 16px;
+  padding-top: 16px;
+}
+
+#mainSeasons h3 {
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+#mainSeasons #seasonsDiv {
+  width: 10%;
+  float: left;
+}
+
+#mainSeasons #seasonsDiv input {
+  width: 30px;
+}
+
+#mainSeasons #episodesDiv {
+  width: 100%;
+  float: left;
+  clear: left;
+}
+
+#mainSeasons #episodesDiv span {
+  font-weight: normal;
+  margin-left: 3px;
+}
+
+#mainSeasons #episodesDiv textarea {
+  height: 340px;
+  width: 98.7%;
+}
+
+#mainSeasons label {
+  display: block;
+}
