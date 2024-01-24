@@ -1,0 +1,3131 @@
+html, body {
+  background-color: #e3e2dd;
+  background-image: url('backgrnd.jpg');
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Arial;
+  font-size: 12px;
+}
+
+body { 
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#root {
+  width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+}
+
+#menu a {
+  font-weight: normal;
+  font-size: 13px;
+  color: black;
+  text-decoration: none;
+}
+
+#menu a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+#menu li {
+  display: inline;
+  padding-top: 3px;
+  padding-right: 15px;
+}
+
+#menu li.spacer {
+  padding: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: gray;
+}
+
+#login {
+  max-width: 350px;
+  margin: 100px auto 100px;
+  padding: 20px 40px;
+  border: 1px solid #CCC;
+  background: #e3e2dd;
+  border-radius: 5px;
+  display: block;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+#login div {
+  margin: 6px 0;
+  display: block;
+  line-height: 20px;
+  box-sizing: border-box;
+  color: #666;
+}
+
+#login input {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  padding: 4px;
+}
+
+#login input[type="submit"] {
+  background-color: #607D8B;
+  border: 1px solid #607D8B;
+  color: #EAECF0;
+  border-radius: 3px;
+  cursor: pointer;
+  width: 60px;
+  text-align: center;
+  padding: 5px 4px;
+  transition: background-color 0.20s ease, border-color 0.20s ease, color 0.20s ease;
+}
+
+#message {
+  color: red;
+  text-align: center;
+}
+
+#message table {
+  width: 100%;
+}
+
+#message td {
+  width: 100%;
+}
+
+#main {
+  margin-top: 0px;
+  width: 100%;
+  margin-bottom: 0px;
+  float: left;
+  background-color: #f1f1f1;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.7);
+}
+
+#menuBar {
+  height: 50px;
+  background: linear-gradient(to bottom,#0055aa 0,#3399fe 100%);
+  width: 100%;
+  z-index: 2;
+}
+
+#menuBarItems {
+  width: 1008px;
+  margin: 0 auto;
+}
+
+
+/*----------------------- Collection template Styles ------------------------------ */
+#selectbox {
+  text-align: left;
+  margin-right: 0px;
+  padding: 3px 0px;
+  height: 60px;
+  background-color: #e3e2dd;
+  color: #666;
+}
+
+#selectbox ul {
+  float: right;
+  list-style-type: none;
+  color: #666;
+  font-size: 12px;
+  width: 1008px;
+}
+
+#selectbox .selectboxLi {
+  float: left;
+  margin: 5px 10px;
+}
+
+#selectbox #selectboxLiSearch{
+  float: right;
+  margin-right: 10px;
+}
+
+#selectbox li label {
+  display: block;
+  font-size: 11px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+#selectbox li #div1 {
+  float: right;
+  margin-top: -5px;
+  margin-right: 0px;
+  font-size: 11px;
+  font-weight: bold;
+  color: #666;
+}
+
+#selectbox li #div2 {
+  float: left;
+  padding-top: 5px;
+}
+
+#selectbox li #div2 input {
+  margin-right: 0px;
+}
+
+#selectbox .selectboxLi #amount {
+  width: 110px;
+}
+
+#selectbox .selectboxLi #view {
+  width: 74px;
+}
+
+#loading {
+  text-align: left;
+  padding: 15px;
+  padding-top: 0px;
+}
+
+#loading img {
+  margin: 10px 10px 0px 10px;
+}
+
+
+/*----------------------- List template Styles ------------------------------ */
+#listTable {
+  padding: 0px;
+  margin-top: -6px;
+  margin-left: 0px;
+  background-color: #e3e2dd;
+}
+
+#listTable #listTableMain {
+  background-color: #e3e2dd;
+  padding: 0px;
+  width: 100%;
+}
+
+.item:hover {
+  box-shadow: 0px 0px 5px #3C74B3;
+  opacity: .8;
+}
+
+.item {
+  box-sizing: border-box;
+  height: 68px;
+  width: 100%;
+  margin: 6px 0px 6px 0px;
+  background: #EEE;
+  padding: 0px;
+  clear: both;
+  cursor: pointer;
+  transition: 0.02s;
+}
+
+.itemAka {
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 5px;
+  height: 1.8em;
+  color: #808080;
+  font-family: Verdana, Arial;
+  font-size: 11px;
+  box-sizing: border-box;
+  display: block;
+}
+
+.itemIcons {
+  float: right;
+  padding: 2px;
+  padding-top: 0px;
+  margin-left: 2px;
+  margin-right: 5px;
+  display: block;
+  box-sizing: border-box;
+}
+
+.itemIcons img {
+  height: 16px;
+}
+
+.itemPhoto {
+  height: 68px;
+  width: 49px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.item #itemPhotoDiv {
+  float: left;
+  margin-right: 10px;
+  padding-bottom: 0px;
+}
+
+.item #itemRowMain {
+  background: #ffffff;
+  padding-bottom: 8px;
+  display: block;
+}
+
+.item #itemRow {
+  white-space: nowrap;
+  display: block;
+  font-weight: bold;
+  color: #444;
+  padding-top: 5px;
+}
+
+.item #detailsRow {
+  white-space: nowrap;
+  padding-top: 1px;
+  display: block;
+  font-size: 12px;
+  color: #444;
+}
+
+.item #detailsRowRight {
+  float: right;
+  padding-right: 7px;
+  padding-top: 3px;
+
+}
+
+.separator {
+  margin: 0.9em;
+  color: #000000;
+}
+
+#pagingDiv {
+  height: 50px;
+}
+
+#noMovies {
+  background-color: #f2f2f2;
+  margin-top: 5px;
+}
+
+#noMoviesDiv {
+  padding: 15px;
+}
+
+#stats div {
+  padding: 4px;
+}
+
+#stats #statsSpan1 {
+  margin: 0.9em;
+  color: #b8b8b8;
+}
+
+#stats #statsSpan2 {
+  color: #2785c9;
+}
+
+#stats #statsStrong1 {
+  color: #555;
+}
+
+
+/*----------------------- List poster Styles ------------------------------ */
+.itemPoster {
+  box-sizing: border-box;
+  margin: 12px 6px;
+  width: 150px;
+  background: #EEE;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  cursor: pointer;
+  cursor: pointer;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  transition: 0.1s;
+}
+
+.itemPoster:hover {
+  box-shadow: 0px 0px 5px #3C74B3;
+  opacity: .8;
+}
+
+#itemPosterPhoto {
+  line-height: 0;
+  overflow: hidden;
+  background: #FFF;
+  box-sizing: border-box;
+  display: block;
+}
+
+#itemPosterPhoto #imgFront, imgNo{
+  height: 222px;
+  width: 150px;
+}
+
+#itemPosterLower {
+  color: #666;
+}
+
+#itemPosterLower .separator {
+  margin: 0.5em;
+  color: #666;
+}
+
+#itemPosterPhotoName {
+  padding: 3px;
+  box-sizing: border-box;
+  color: #555;
+  text-align: center;
+  line-height: 3em;
+  background: #FEFEFE;
+  display: block;
+  width: 150px;
+}
+
+#itemPosterPhotoName span {
+  display: inline-block;
+  text-align: center;
+  box-sizing: border-box;
+  vertical-align: middle;
+  line-height: 1.5em;
+  max-height: 3em;
+  overflow: hidden;
+  color: #555;
+}
+
+.itemPosterPhoto {
+  margin: auto;
+  width: 100%;
+  overflow: hidden;
+  vertical-align: bottom;
+  box-sizing: border-box;
+}
+
+#poster {
+  background-color: #e3e2dd;
+  padding: 0px;
+  width: 100%;
+  display: block;
+  clear: both;
+  text-align: center;
+  margin-top: 0px;
+  box-sizing: border-box;
+}
+
+#formatPosterDiv {
+  height: 24px;
+}
+
+#formatPosterDiv span {
+  color: #FFFFFF;
+  font-weight: bold;
+  padding-top: 13px;
+  display: inline-block;
+  font-style: italic;
+  font-size: 10px;
+}
+
+#pagingDivPoster {
+  height: 65px;
+}
+
+#noMoviesDivPoster {
+  background-color: #f2f2f2;
+}
+
+#noMoviesDiv2Poster {
+  padding: 15px;
+}
+
+#itemRowPoster {
+  position: absolute;
+  z-index: 1;
+  padding: 2px;
+  width: 146px;
+}
+
+.itemIconsPoster {
+  float: right;
+  clear: right;
+  box-shadow: 0px 0px 3px #000;
+  border: 1px solid #808080;
+  border-radius: 20px;
+  background: #FFF;
+  margin: 1px;
+  padding: 2px;
+  width: 22px;
+  height: 22px;
+}
+
+.itemIconsPoster img{
+  width: 16px;
+  height: 16px;
+  padding-top: 3px;
+}
+
+/*-----------------------End List poster Styles ------------------------------ */
+
+
+#selectboxTable {
+  margin-left: -2px;
+  width: 100%;
+  margin-bottom: 2px;
+}
+
+#selectboxTableTd1 {
+  text-align: left;
+  padding-top: 1px;
+  padding-left: 6px;
+}
+
+#selectboxTableTd2 {
+  text-align: left;
+  padding-top: 1px;
+  width: 500px;
+}
+
+#credits {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to bottom,#3399fe 0,#0055aa 100%);
+  font-size: 10px;
+  text-align: center;
+}
+
+#credits a {
+  color: white;
+}
+
+.loginLogout {
+  cursor: pointer;
+  border: none;
+}
+
+#credits a:hover {
+  text-decoration: none;
+}
+
+a {
+  color: #136CB2;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #136CB2;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #136CB2;
+  text-decoration: none;
+}
+
+input.textfield {
+  font-size: 12px;
+  color: #434343;
+  font-family: Verdana, Arial;
+  background-color: #ffffff;
+  border: 1px solid #c3c4c4;
+  padding: 4px;
+  margin-top: 2px;
+  border-radius: 3px;
+}
+
+input#searchfield {
+  color: #555;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: 6px 26px 6px 6px;
+  margin-top: 21px;
+  outline: 0;
+  background-color: #f9f9f9;
+  background: url('../images/icons/search.png') right 4px center no-repeat, linear-gradient(to bottom, #FEFEFE, #F2F2F2); /* Standard, IE10 */
+  background: url('../images/icons/search.png') right 4px center no-repeat, -moz-linear-gradient(top, #FEFEFE, #F2F2F2); /* FF 3.6+ */
+  background: url('../images/icons/search.png') right 4px center no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#FEFEFE), to(#F2F2F2)); /* Safari 4+, Chrome 2+ */
+  background: url('../images/icons/search.png') right 4px center no-repeat, -webkit-linear-gradient(top, #FEFEFE, #F2F2F2); /* Safari 5.1+, Chrome 10+ */
+  background: url('../images/icons/search.png') right 4px center no-repeat, -o-linear-gradient(top, #FEFEFE, #F2F2F2); /* Opera 11.10 */
+  background-size: 20px, auto;
+  font-size: 12px;
+  width: 200px;
+  height: 18px;
+}
+
+
+/*----------------------- Users page Styles ------------------------------ */
+#newuser {
+  margin-bottom: 20px;
+  margin-top: 4px;
+  width: 97%;
+  padding: 12px 14px;
+}
+
+#newuser #addNewUser {
+  margin-bottom: -25px;
+}
+
+#newuser h2 {
+  color: #664700;
+  font-weight: normal;
+}
+
+#newuser #newUserDiv1 {
+  width: 100%;
+}
+
+#newuser #newUserDiv2 {
+  width: 100%;
+  margin-top: 16px;
+  float: left;
+  margin-bottom: 20px;
+}
+
+#newUserDiv2 label {
+  display: block;
+}
+
+#newUserDiv2 .newUserDiv2Fields {
+  white-space: nowrap;
+  line-height: 18px;
+  color: #333;
+  padding-top: 0px;
+  margin-top: 0px;
+  float: left;
+}
+
+#newUserDiv2 .newUserDiv2FieldsLeft {
+  white-space: nowrap;
+  line-height: 18px;
+  color: #333;
+  padding-top: 0px;
+  margin-top: 0px;
+  float: left;
+  margin-left: 36px;
+}
+
+#newUserDiv2 .newUserDiv2FieldsRight {
+  white-space: nowrap;
+  line-height: 18px;
+  color: #333;
+  padding-top: 0px;
+  margin-top: 0px;
+  float: right;
+}
+
+.usersInput {
+  color: #555;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: 6px 26px 6px 6px;
+  outline: 0;
+  background-color: #f9f9f9;
+  background-size: 20px, auto;
+  font-size: 12px;
+  height: 18px;
+  width: 120px;
+  margin-right: 36px;
+}
+
+.usersInputEmail {
+  color: #555;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: 6px 26px 6px 6px;
+  outline: 0;
+  background-color: #f9f9f9;
+  background-size: 20px, auto;
+  font-size: 12px;
+  height: 18px;
+  width: 200px;
+}
+
+#userListDiv {
+  margin-bottom: 16px;
+  margin-top: 5px;
+  float: left;
+  width: 100%;
+  border-top: solid 3px #999;
+  padding-top: 16px;
+}
+
+#userListDiv #userListDiv2 {
+  margin-bottom: 20px;
+}
+
+#userListDiv table {
+  width: 100%;
+}
+
+#userListDiv tr {
+  line-height: 25px;
+}
+
+#userListDiv .lastTd {
+  width: 20px;
+  text-align: center;
+}
+
+#userListDiv .lastTd div {
+  margin-top: 3px;
+  margin-bottom: -3px;
+}
+
+#userListDiv .lastTd img {
+  height: 16px;
+}
+/*----------------------- End Users page Styles ------------------------------ */
+
+
+select.select {
+  font-size: 11px;
+  background-color: white;
+  margin-right: 15px;
+  margin-top: 2px;
+  padding: 4px;
+  border: 1px solid gray;
+  border-radius: 4px 4px 4px 4px;
+  width: 150px;
+}
+
+select.selectList {
+  color: #555;
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  padding: 6px 26px 6px 6px;
+  outline: 0;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  background: url('../images/icons/down.png') right 4px center no-repeat, linear-gradient(to bottom, #FEFEFE, #F2F2F2); /* Standard, IE10 */
+  background: url('../images/icons/down.png') right 4px center no-repeat, -moz-linear-gradient(top, #FEFEFE, #F2F2F2); /* FF 3.6+ */
+  background: url('../images/icons/down.png') right 4px center no-repeat, -webkit-gradient(linear, 0 0, 0 100%, from(#FEFEFE), to(#F2F2F2)); /* Safari 4+, Chrome 2+ */
+  background: url('../images/icons/down.png') right 4px center no-repeat, -webkit-linear-gradient(top, #FEFEFE, #F2F2F2); /* Safari 5.1+, Chrome 10+ */
+  background: url('../images/icons/down.png') right 4px center no-repeat, -o-linear-gradient(top, #FEFEFE, #F2F2F2); /* Opera 11.10 */
+  background-size: 20px, auto;
+  width: 140px;
+  font-size: 12px;
+  height: 32px;
+}
+
+select.selectList:hover {
+  border: 1px solid #CCC;
+  box-shadow: 0 0 1px rgba(0, 0, 0, .4);
+  color: #333;
+}
+
+textarea {
+  font-family: Verdana, Arial;
+  font-size: 12px;
+  color: #434343;
+  border: 1px solid #c3c4c4;
+  border-radius: 3px;
+  margin-top: 1px;
+  padding: 5px;
+  width: 418px;
+  height: 60px;
+  background-color: white;
+  resize: none; 
+}
+
+table {
+  font-size: 13px;
+  border-collapse: collapse;
+}
+
+table td {
+  vertical-align: top;
+  padding: 2px;
+}
+
+form {
+  padding: 0px;
+  margin: 0px;
+}
+
+h2 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+h3 {
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+
+h4 {
+  margin: 0px 0px 3px 0px;
+  color: #333333;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.loaned {
+  color: #A50010;
+  font-size: 10px;
+}
+
+.user_td {
+  padding-top: 3px;
+  padding-left: 3px;
+  padding-right: 10px;
+  margin-bottom: -1px;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.user_td_img {
+  padding-top: 9px;
+  padding-left: 15px;
+  padding-right: 0px;
+  margin-left: 0px;
+  text-align: right;
+}
+
+.topLogo {
+  float: left;
+  margin: 0px;
+  padding-top: 6px;
+  padding-left: 0px;
+  padding-right: 3px;
+  padding-bottom: 1px;
+  font-size: 13px;
+}
+
+.topLogo div {
+  float: right;
+  margin: 0px;
+  padding-left: 3px;
+  padding-right: 10px;
+  color: #fff;
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+
+.topLogo div:hover {
+  cursor: default;
+}
+
+.topLogo img {
+  max-height: 38px;
+}
+
+.top {
+  float: left;
+  margin: 0px;
+  padding-top: 6px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 1px;
+  font-size: 13px;
+}
+
+.top div {
+  float: right;
+  margin: 0px;
+  padding-left: 0px;
+  color: white;
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+
+.top:hover {
+  background: linear-gradient(to bottom,#003c79 0,#2475bd 100%);
+  color: #eee;
+}
+
+.topSelected {
+  background: linear-gradient(to bottom,#003c79 0,#2475bd 100%);
+  color: #eee;
+}
+
+#logoLogedin {
+  float: right;
+  background: linear-gradient(to bottom,#003c79 0,#2475bd 100%);
+  cursor: default;
+  display: none;
+}
+
+.logo {
+  float: left;
+  margin: 0px;
+  padding-top: 6px;
+
+  padding-bottom: 1px;
+  font-size: 13px;
+}
+
+.logo img {
+  max-height: 38px;
+}
+
+.logo div {
+  float: right;
+  margin: 0px;
+  padding-left: 15px;
+  padding-right: 15px;
+  color: #fff;
+  padding-top: 11px;
+  padding-bottom: 15px;
+}
+
+#loggedin {
+  float: right;
+  text-align: center;
+  margin: 0px;
+  padding: 16px;
+  color: #fff;
+  width: 55px;
+  font-size: 13px;
+}
+
+.logo:hover, #loggedin:hover{
+  background: linear-gradient(to bottom,#014a94 0,#2e8ee9 100%);
+  color: #eee;
+}
+
+.editPageTd {
+  font-weight: bold;
+  color: #333;
+  white-space: nowrap;
+  line-height: 18px;
+  padding-top: 14px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  
+}
+
+.editPageTd2 {
+  white-space: nowrap;
+  line-height: 18px;
+  color: #333;
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.updateAll {
+  margin-right: 10px;
+}
+
+#checkAllLabel {
+  font-weight: bold;
+  color: #333;
+}
+
+*:focus {
+  outline: none;
+}
+
+.pageSelect {
+  text-align: center;
+  padding-top: 15px;
+}
+
+.pageSelect a:hover {
+  text-decoration: none;
+}
+
+.selected {
+  background-color: #0169ac;
+  color: #FFF;
+  font-weight: bold;
+}
+
+.unselected {
+  background-color: #FFF;
+  color: #555;
+  text-decoration: none;
+}
+
+.unselected:hover {
+  background-color: #dff4ff;
+}
+
+.unselectedHover:hover {
+  background-color: #FFF;
+}
+
+.current {
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  text-align: center;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+.currentPoster {
+  border-radius: 3px;
+  border: 1px solid #CCC;
+  text-align: center;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  margin-left: 8px;
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+#stats {
+  display: inline-block;
+  width: 100%;
+  background: #eee;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 90%;
+  color: #555;
+  margin-top: 0px;
+}
+
+#stats div {
+  padding: 10px;
+}
+
+#stats #statsSpan1Poster {
+  margin: 0 .5em;
+  color: #b8b8b8;
+}
+
+#stats #statsSpan2Poster {
+  color: #2785c9;
+}
+
+#stats #statsStrongPoster {
+  color: #b8b8b8;
+}
+
+
+/*----------------------- Movie details Right Column Styles ------------------------------ */
+#rightColumn {
+  float: left;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#rightColumn #rightColumnControls {
+  float: right;
+  clear: left;
+  width: 253px;
+  background-color: #ffffff;
+  padding: 0px 19px;
+  margin-left: -8px;
+  border-left: 3px solid #999;
+  border-bottom-width: 4px;
+  border-bottom-style: double;
+  border-bottom-color: #ccc;
+  margin-bottom: -5px;
+}
+
+#rightColumn #rightColumnControls hr {
+  border-top: 1px solid #ccc;
+}
+
+.controlTopDiv2 {
+  float: right;
+  margin-left: 15px;
+}
+
+.controlTopDiv {
+  float: left;
+}
+
+#rightColumn #rightColumnControls #controls span {
+  margin: 0px;
+  padding: 0px;
+}
+
+#rightColumn #rightColumnControls #controls .delete {
+  margin-left: 21px;
+}
+
+#rightColumn #rightColumnControls #controls .imdb {
+  margin-left: 21px;
+}
+
+#controls {
+  text-align: right;
+  width: 100%;
+  float: right;
+  display: inline;
+  border-bottom: 1px solid #ccc;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#rightColumn #loanedDiv {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+#rightColumn #loanedDiv H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#rightColumn #loanedDiv div1 {
+  width: 100%;
+}
+
+#toptabs {
+  float: left;
+  width: 100%;
+  background-color: #f6f6f5;
+  padding-bottom: 15px;
+}
+
+#toptabs img {
+  border: none;
+  max-width: 190px;
+  max-height: 281px;
+}
+
+#toptabs a {
+  color: #136CB2;
+}
+
+#toptabs H4 {
+  line-height: 18px;
+  display: inline;
+  padding: 0 0.5em 0 0;
+  color: #333333;
+  font-size: 13px;
+  margin: 0.35em 0 0.25em;
+}
+
+#toptabs #toptabsDiv1 {
+  width: 490px;
+  float: left;
+  padding-left: 18px;
+  padding-right: 0px;
+  padding-top: 15px;
+}
+
+#toptabs .principalCredits {
+  margin-top: 5px;
+  padding-bottom: 3px;
+  white-space: normal;
+  color: #333;
+}
+
+#toptabs .principalCredits .principalCreditsSpan {
+  color: #666666;
+  padding-left: 8px;
+  padding-right: 3px;
+  display: inline list-item;
+}
+
+#toptabs #plotoutline {
+  line-height: 18px;
+  font-size: 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  color: #333;
+  max-height: 145px;
+  overflow: hidden;
+}
+
+#toptabs #photo {
+  float: left;
+  max-width: 190px;
+  max-height: 281px;
+  margin: 0;
+  padding: 0;
+}
+
+/*-- Moviepage Rating Styles -- */
+#rightColumn #ratingDiv {
+  padding-top: 36px;
+  padding-bottom: 16px;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+#rightColumn #ratingDiv H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#rightColumn #ratingDiv #ratingValue {
+  background-image: url('yellowstar.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+  width: 120px;
+  height: 25px;
+  padding-left: 40px;
+  padding-top: 6px;
+}
+
+/*-- Moviepage back cover Styles -- */
+#rightColumn #backCoverDiv {
+  padding-top: 16px;
+  padding-bottom: 0px;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+#rightColumn #backCoverDiv H2 {
+  font-weight: normal;
+  margin-bottom: 0px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#metacritics {
+  float: left;
+  height: 31px;
+  width: 150px;
+  margin-top: 5px;
+}
+
+#metacritics #metacriticsDiv2 {
+  color: white;
+  font-weight: normal;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+  float: left;
+}
+
+#metacritics #metaScore {
+  float: left;
+  padding-left: 14px;
+  margin-top: 9px;
+}
+
+#metacritics .metascoreGreen{
+  background-color: #66CC33;
+}
+
+#metacritics .metascoreYellow{
+  background-color: #FFCC33;
+}
+
+#metacritics .metascoreRed{
+  background-color: #FF0000;
+}
+
+#metacriticsDiv2 span {
+  line-height: 25px;
+  vertical-align: middle;
+}
+
+#rightColumn #ratingDiv #ratingValue #ratingValueScore {
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+}
+
+
+#detailsRight {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ccc;
+  float: left;
+  clear: both;
+  width: 100%;
+}
+
+#detailsRight H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#detailsRight span {
+  color: #333;
+  font-size: 10px;
+}
+
+#rating {
+  width: 100%;
+}
+
+.countryLang {
+  width: 160px;
+}
+
+#imdbid {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+#cover {
+  float: left;
+  clear: both;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+#coverImg1 {
+  padding-bottom: 2px;
+  padding-top: 2px;
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#coverImg1:hover {
+  filter: brightness(93%);
+  transition: opacity 0.35s;
+}
+
+#coverImg2 {
+  max-height: 200px;
+  max-width: 200px;
+}
+
+#notes {
+  float: left;
+  clear: both;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#notes #notesDiv1 {
+  margin-bottom: 12px;
+}
+
+#notes H2 {
+  font-weight: normal;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#notes #notesDiv2 {
+  overflow-wrap: break-word;
+  color: #333;
+}
+
+.moviepage_td {
+  font-weight: bold;
+  color: #333333;
+  width: 90px;
+  white-space: nowrap;
+  line-height: 22px;
+  margin-left: 1px;
+  font-size: 13px;
+  float: left;
+  clear: both;
+}
+
+.moviepage_td2 {
+  line-height: 22px;
+  font-size: 13px;
+  float: left;
+}
+
+.moviepage_td2 img {
+  height: 20px;
+  padding: 0px 1px 0px 0px;
+  margin-bottom: -3px;
+}
+
+.moviepage_td2 #ratingStars img {
+  padding-left: 3px;
+  max-height: 16px;
+}
+
+#borderDiv {
+  float: left;
+  clear: both;
+  border-top: 1px solid #ccc;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+#externalRight {
+  float: left;
+  clear: both;
+  border-top: 1px solid #ccc;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  width: 100%;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#externalRight H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+}
+
+
+/*-- Moviepage technical specs Styles -- */
+#techSpecs {
+  float: left;
+  clear: both;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+#techSpecs H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#techSpecs H4 {
+  float: left;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+
+#techSpecs span {
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 2px;
+  display: block;
+  color: #136CB2;
+}
+
+#techSpecs .runtimeDescription {
+  color: #333;
+  display: inline;
+}
+
+#techSpecs .techSpecsSpan {
+  margin-top: 1px;
+  float: left;
+  width: 150px;
+}
+
+#techSpecs #runtimesDiv{
+  float: left;
+  color: #333;
+  width: 100%;
+}
+
+#techSpecs #runtimesDiv div{
+  float: left;
+  color: #333;
+  width: 175px;
+  margin-top: 1px;
+}
+
+#techSpecs #imdbDiv, #addedDiv, #idDiv{
+  margin-top: 6px;
+  color: #333;
+  float: left;
+  width: 250px;
+}
+
+/*-- Moviepage Photos Styles -- */
+#photosRight {
+  float: left;
+  clear: both;
+  padding-top: 16px;
+  padding-bottom: 10px;
+  width: 100%;
+  text-align: left;
+}
+
+#photosRight H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#photosRight .mainphotoDiv {
+  display: inline-block;
+  margin-right: -6px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+/*-- Moviepage Locations Styles -- */
+#didYouKnowRight {
+  float: left;
+  clear: both;
+  padding-top: 16px;
+  padding-bottom: 6px;
+  width: 100%;
+}
+
+#didYouKnowRight H2 {
+  font-weight: normal;
+  margin-bottom: 12px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#didYouKnowRight span {
+  color: #333;
+  font-weight: normal;
+  margin-top: 2px;
+  display: block;
+}
+
+#didYouKnowRight .locationsInit {
+  padding: 0px 0px 15px 0px;
+  font-size: 13px;
+}
+
+#didYouKnowRight .locationsInit div{
+  color: #333;
+  font-size: 13px;
+}
+
+#didYouKnowRight a {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+/*----------------------- Movie details Left Column Styles ------------------------------ */
+.seeMoreLess {
+  border: 1px solid #CCCCCC;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 2px 10px 5px 10px;
+  color: #136CB2;
+  margin-left: -5px;
+}
+
+.seeMoreLess:hover {
+  text-decoration: none;
+  background-color: #CCCCCC;
+  color: #2E2020;
+}
+
+.genreTop {
+  border: 1px solid #CCCCCC;
+  border-radius: 1rem;
+  display: inline-flex;
+  padding: 2px 10px 5px 10px;
+  margin-right: 8px;
+  color: #2E2020;
+}
+
+#topGenres {
+  margin-bottom: 10px;
+}
+
+#leftColumn {
+  border-right: solid 3px #999;
+  width: 714px;
+  float: left;
+  min-height: 464px;
+}
+
+#leftColumn #leftColumnDiv1 {
+  width: 100%;
+  padding: 0px;
+  float: left;
+}
+
+#leftColumn #leftColumnDiv2 {
+  width: 100%;
+  min-height: 150px;
+  max-height: 520px;
+  overflow: auto;
+  background-color: #eee;
+}
+
+#leftColumn #leftColumnDiv3 {
+  float: left;
+  color: #fff;
+  background-color: #333;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+#leftColumn #leftColumnDiv4 {
+  padding-left: 15px;
+  margin-bottom: -5px;
+  margin-top: -15px;
+}
+
+#leftColumn #leftColumnDiv4 H1 {
+  font: 33px Arial,sans-serif;
+  font-weight: normal;
+  line-height: 110%;
+}
+
+#leftColumn #leftColumnDiv4 span {
+  color: silver;
+  font-family: Arial;
+  font-size: 25px;
+  line-height: 100%;
+  font-weight: normal;
+}
+
+#leftColumn #leftColumnDiv3 #leftColumnDiv5 {
+  padding-left: 15px;
+  display: inline;
+  color: silver;
+  font-size: 12px;
+  font-family: Verdana, Arial, sans-serif;
+}
+
+#leftColumn #leftColumnDiv3 #leftColumnDiv5 .separator {
+  margin: 0 .5em;
+  color: #6b6b6b;
+}
+
+
+/*----------------------- Yellow bar Styles ------------------------------ */
+#yellowBar {
+  height: 15px;
+  width: 702px;
+  float: left;
+  border-top: 1px solid #f5c518;
+  border-bottom: 1px solid #f5c518;
+  background: #ffffff;
+  padding: 8px 12px 12px 0px;
+}
+
+#yellowBar #yellowTop250 {
+  padding: 9px 20px 11px 12px;
+  margin: 0px;
+  clip-path: polygon(0 0, 100% 0%, 95% 100%, 0% 100%);
+  background-color: #f5c518;
+}
+
+#yellowBar #yellowTop250Blank {
+  padding: 9px 20px 11px 12px;
+  margin: 0px;
+  clip-path: polygon(0 0, 100% 0%, 80% 100%, 0% 100%);
+  background-color: #f5c518;
+}
+
+#yellowBar a {
+  color: #000000;
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+}
+
+#yellowBar #awardSpan {
+  font-weight: bold;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  color: #333333;
+  margin-left: 10px;
+}
+
+#yellowBar #nomSpan {
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 13px;
+  padding-left: 5px;
+  color: #333;
+}
+
+/*----------------------- button Styles ------------------------------ */
+.buttons button {
+  display: block;
+  float: right;
+  margin: 0px;
+  margin-left: 20px;
+  background-color: transparent;
+  border-color: #E0E0E0 #C0C0C0 #C0C0C0 #E0E0E0;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 100%;
+  line-height: 130%;
+  text-decoration: none;
+  font-weight: bold;
+  color: #565656;
+  cursor: pointer;
+  width: auto;
+  overflow: visible;
+  border-radius: 3px;
+}
+
+.buttons button[type] {
+  padding: 4px 10px 4px 7px; /* Firefox */
+  line-height: 17px; /* Safari */
+}
+
+.buttons button img {
+  margin: 0 3px -3px 0 !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+.buttons button:hover {
+  background-color: #dff4ff;
+  border: 1px solid #c2e1ef;
+  color: #336699;
+}
+
+.buttons button.positive {
+  color: #565656;
+}
+
+.buttons button.positive:hover {
+  background-color: #E6EFC2;
+  border: 1px solid #C6D880;
+  color: #529214;
+}
+
+.buttons button.search {
+  color: #336699;
+  margin-top: 2px;
+  border: 2px solid #336699;
+}
+
+.buttons button.search:hover {
+  background-color: #dff4ff;
+  border: 2px solid #c2e1ef;
+  color: #336699;
+}
+
+.buttons button.update {
+  color: #336699;
+  border: 1px solid #336699;
+}
+
+.buttons button.update:hover {
+  background-color: #dff4ff;
+  border: 1px solid #c2e1ef;
+  color: #336699;
+}
+
+
+/*----------------------- File input browse button Styles ------------------------------ */
+.visually-hidden {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* Separate rule for compatibility, :focus-within is required on modern Firefox and Chrome */
+input.visually-hidden:focus + label {
+  outline: thin dotted;
+}
+input.visually-hidden:focus-within + label {
+  outline: thin dotted;
+}
+
+label.labelCover {
+  display: block;
+  float: right;
+  margin: 0px;
+  margin-left: 20px;
+  background-color: #f3f3f3;
+  border-color: #E0E0E0 #C0C0C0 #C0C0C0 #E0E0E0;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 100%;
+  line-height: 130%;
+  text-decoration: none;
+  font-weight: bold;
+  color: #565656;
+  cursor: pointer;
+  width: auto;
+  overflow: visible;
+  padding: 4px 10px 4px 7px; /* Firefox */
+  line-height: 17px; /* Safari */
+  border-radius: 3px;
+}
+
+label.labelCover:hover {
+  background-color: #dff4ff;
+  border: 1px solid #c2e1ef;
+  color: #336699;
+}
+
+label.labelCover img {
+  margin: 0 3px -3px 0 !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+
+/*----------------------- Control button Styles ------------------------------ */
+button.controlAnchor {
+  display: block;
+  float: right;
+  margin: 0px;
+  margin-left: 0px;
+  background-color: transparent;
+  border-color: #c6c6c6 #999 #999 #c6c6c6;
+  border-width: 1px;
+  border-style: solid;
+  font-size: 100%;
+  line-height: 130%;
+  text-decoration: none;
+  font-weight: bold;
+  color: #565656;
+  cursor: pointer;
+  width: auto;
+  overflow: visible;
+  padding: 3px 7px 3px 7px; /* Firefox */
+  border-radius: 3px;
+}
+
+button.controlAnchor:hover {
+  background-color: #dff4ff;
+  border-color: #9a9a9a #707070 #707070 #9a9a9a;
+  border-width: 1px;
+  color: #336699;
+}
+
+button.controlAnchor img {
+  margin: 0px 0px -3px 0px !important;
+  padding: 0;
+  border: none;
+  width: 16px;
+  height: 16px;
+}
+
+
+/*----------------------- cast & Crew Styles ------------------------------ */
+#castCrew {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px;
+  padding: 20px 20px 20px 20px;
+  background-color: #ffffff;
+}
+
+#castCrew #castCrewDiv1 {
+  margin-bottom: 13px;
+  padding-left: 0px;
+}
+
+#castCrew #castCrewDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+/*--director-- */
+#castCrew #directorDiv {
+  line-height: 180%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+}
+
+#castCrew #directorDiv hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-style: dotted;
+  margin-left: 90px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+
+#castCrew #directorDiv .directorDivInit .nameSpan {
+  display: inline-block;
+  width: 190px;
+  padding-left: 12px;
+  vertical-align: top;
+}
+
+#castCrew #directorDiv .directorDivInit .sepSpan {
+  display: inline-block;
+  width: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+#castCrew #directorDiv .directorDivInit .roleSpan {
+  display: inline-block;
+  width: 427px;
+  vertical-align: top;
+}
+
+#castCrew #directorDiv a {
+  cursor: pointer;
+}
+
+#castCrew #directorDiv .directorDivNone {
+  display: none;
+}
+
+#moredirectorDiv {
+  margin-left: 0px;
+  margin-top: 5px;
+  line-height: initial;
+}
+
+
+/*--writer-- */
+#castCrew #writerDiv {
+  line-height: 180%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#castCrew #writerDiv .writerDivInit .nameSpan {
+  display: inline-block;
+  width: 190px;
+  padding-left: 12px;
+  vertical-align: top;
+}
+
+#castCrew #writerDiv .writerDivInit .sepSpan {
+  display: inline-block;
+  width: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+#castCrew #writerDiv .writerDivInit .roleSpan {
+  display: inline-block;
+  width: 427px;
+  vertical-align: top;
+}
+
+#castCrew #writerDiv a {
+  cursor: pointer;
+}
+
+#castCrew #writerDiv .writerDivNone{
+  display: none;
+}
+
+#morewriterDiv {
+  margin-left: 0px;
+  margin-top: 5px;
+  line-height: initial;
+}
+
+/*--Cast Styles -- */
+.castDivInit:nth-child(even) {
+  background-color: #fbfbfb;
+}
+.castDivInit:nth-child(odd) {
+  background-color: #f6f6f5;
+}
+
+#castDiv {
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#castDiv H4{
+  margin-bottom: 13px;
+}
+
+#castCrew #castDiv .castDivInit .castImg {
+  display: inline-block;
+  height: 44px;
+  vertical-align: middle;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+#castCrew #castDiv .castDivInit .castImg:hover {
+  filter: brightness(93%);
+  transition: opacity 0.35s;
+}
+
+#castCrew #castDiv .castDivInit .nameSpan {
+  display: inline-block;
+  width: 247px;
+  padding-left: 12px;
+  vertical-align: middle;
+}
+
+#castCrew #castDiv .castDivInit .sepSpan {
+  display: inline-block;
+  width: 15px;
+  padding-left: 12px;
+  padding-right: 12px;
+  vertical-align: middle;
+}
+
+#castCrew #castDiv .castDivInit .roleSpan {
+  display: inline-block;
+  width: 340px;
+  vertical-align: middle;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#castCrew #castDiv a {
+  cursor: pointer;
+}
+
+#castCrew #castDiv .castDivNone{
+  display: none;
+}
+
+#castCrew #castDiv span {
+  font-weight: normal;
+}
+
+#castCrew #castDiv #castSpan {
+  margin-top: 10px;
+}
+
+#morecastDiv {
+  margin-left: 0px;
+}
+
+
+/*--Producer-- */
+#castCrew #producerDiv {
+  line-height: 180%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#castCrew #producerDiv hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-style: dotted;
+  margin-left: 97px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+
+#castCrew #producerDiv .producerDivInit .nameSpan {
+  display: inline-block;
+  width: 190px;
+  padding-left: 12px;
+  vertical-align: top;
+}
+
+#castCrew #producerDiv .producerDivInit .sepSpan {
+  display: inline-block;
+  width: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+#castCrew #producerDiv .producerDivInit .roleSpan {
+  display: inline-block;
+  width: 427px;
+  vertical-align: top;
+}
+
+#castCrew #producerDiv a {
+  cursor: pointer;
+}
+
+#producerDiv .producerDivNone{
+  display: none;
+}
+
+#moreproducerDiv {
+  margin-left: 0px;
+  margin-top: 5px;
+  line-height: initial;
+}
+
+/*--Composer-- */
+#castCrew #composerDiv {
+  line-height: 180%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  margin-top: 15px;
+}
+
+#castCrew #composerDiv hr {
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-style: dotted;
+  margin-left: 70px;
+  margin-top: -10px;
+  margin-bottom: 8px;
+}
+
+#castCrew #composerDiv .composerDivInit .nameSpan {
+  display: inline-block;
+  width: 190px;
+  padding-left: 12px;
+  vertical-align: top;
+}
+
+#castCrew #composerDiv .composerDivInit .sepSpan {
+  display: inline-block;
+  width: 20px;
+  padding-left: 12px;
+  padding-right: 12px;
+  vertical-align: top;
+}
+
+#castCrew #composerDiv .composerDivInit .roleSpan {
+  vertical-align: top;
+  display: inline-block;
+  width: 427px;
+}
+
+#castCrew #composerDiv a {
+  cursor: pointer;
+}
+
+#composerDiv .composerDivNone{
+  display: none;
+}
+
+#morecomposerDiv {
+  margin-left: 0px;
+  margin-top: 5px;
+  line-height: initial;
+}
+
+/*----------------------- Moviepage Storyline Styles ------------------------------ */
+#storyline {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px;
+  padding: 20px 20px 24px 20px;
+  background-color: #ffffff;
+}
+
+#storyline #storylineDiv1 {
+  margin-bottom: 0px;
+  padding-left: 0px;
+}
+
+#storyline #storylineDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  margin-bottom: 15px;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#storyline a {
+  cursor: pointer;
+}
+
+
+/*-- Moviepage Plot Styles -- */
+#storyline #plot .plotInit {
+  margin-bottom: 5px;
+}
+#storyline #plot .plotNone {
+  display: none;
+}
+
+#storyline #plot .writerName {
+  color: #136CB2;
+}
+
+#storyline #plot {
+  font-weight: initial;
+  color: #333;
+  font-size: 13px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+#storyline #plot div {
+  line-height: 140%;
+  display: inline-block;
+}
+
+/*-- Moviepage Keywords Styles -- */
+#storyline #keywords .keywordsInit {
+  margin-top: 0px;
+  margin-left: 0px;
+  color: #2E2020;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 0px;
+}
+
+#storyline #keywords .keywordsInit a {
+  border: 1px solid #CCCCCC;
+  border-radius: 1rem;
+  display: inline-flex;
+  padding: 2px 10px 5px 10px;
+  margin-right: 8px;
+  color: #2E2020;
+}
+
+#storyline #keywords .keywordsInit a:hover {
+  text-decoration: none;
+  background-color: #CCCCCC;
+}
+
+#storyline #keywords #keywordLink {
+  margin-top: 0px;
+  margin-left: 4px;
+  margin-bottom: 5px;
+}
+
+.keywordsNone {
+  display: none;
+}
+
+#storyline #keywords {
+  font-weight: initial;
+  color: #333;
+  font-size: 13px;
+  line-height: 140%;
+  padding-bottom: 10px;
+
+}
+
+#storyline #keywords H4{
+  float: left;
+}
+
+#storyline #keywords #keywordsBase{
+  margin: 0px 0px 0px 0px;
+  max-height: 297px;
+  overflow-y: auto;
+}
+
+
+/*-- Moviepage Taglines Styles -- */
+#storyline #taglines {
+  font-weight: initial;
+  color: #333;
+  font-size: 13px;
+  line-height: 140%;
+  border-top: 1px solid #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 6px;
+}
+
+#storyline #taglines h4{
+  float: left;
+}
+
+.taglinesInit {
+  padding: 1px 25px 8px 0px;
+  margin-left: 71px;
+  color: #333;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.taglinesNone {
+  display: none;
+}
+
+
+/*-- Moviepage Genres Styles -- */
+#storyline #genres {
+  font-weight: initial;
+  color: #136CB2;
+  font-size: 13px;
+  line-height: 140%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+#storyline #genres h4{
+  float: left;
+  padding-right: 10px;
+}
+
+#storyline #genres .langSep {
+  color: #666666;
+  padding-left: 8px;
+  padding-right: 3px;
+  display: inline list-item;
+}
+
+#storyline #genres .langDiv {
+  display: inline-block;
+}
+
+/*-- Moviepage Certifications (MPAA) Styles -- */
+#storyline #certifications {
+  font-weight: initial;
+  color: #333;
+  font-size: 13px;
+  line-height: 140%;
+  padding-top: 10px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+#storyline #certifications H4{
+  float: left;
+}
+
+#storyline #certificationsBase{
+  margin-left: 0px;
+  margin-bottom: 0px;
+}
+
+#storyline #certifications .certificationsInit {
+  padding-bottom: 5px;
+  margin-left: 95px;
+}
+
+#storyline #certifications .certificationsNone {
+  display: none;
+}
+
+#storyline #certifications .certValue {
+  color: #136CB2;
+}
+
+#storyline #certifications .certComment {
+  padding-left: 5px;
+}
+
+#storyline #certifications .certSep {
+  color: #CCCCCC;
+  padding-left: 15px;
+  padding-right: 10px;
+}
+
+#morecertifications {
+  margin-top: 5px;
+  margin-left: 0px;
+  line-height: initial;
+}
+
+
+/*----------------------- Moviepage Details Styles ------------------------------ */
+#details{
+  width: 674px;
+  float: left;
+  clear: right;
+  margin: 0px;
+  padding: 20px 20px 24px 20px;
+  background-color: #ffffff;
+}
+
+#details #detailsDiv1 {
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+
+#details #detailsDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+/*-- Moviepage country Styles -- */
+#details #country {
+  font-weight: initial;
+  color: #136CB2;
+  font-size: 13px;
+  line-height: 140%;
+  border-top: 1px solid #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+#details #country h4{
+  display: inline;
+  padding-right: 10px;
+}
+
+#details #country .langSep {
+  color: #666666;
+  padding-left: 8px;
+  padding-right: 3px;
+  display: inline list-item;
+}
+
+#details #country .langDiv {
+  display: inline-block;
+}
+
+/*-- Moviepage languages Styles -- */
+#details #languages {
+  font-weight: initial;
+  color: #136CB2;
+  font-size: 13px;
+  line-height: 140%;
+  margin-top: 5px;
+  border-top: 1px solid #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+#details #languages h4{
+  display: inline;
+  padding-right: 10px;
+  float: left;
+}
+
+#details #languages .langSep {
+  color: #666666;
+  padding-left: 8px;
+  padding-right: 3px;
+  display: inline list-item;
+}
+
+#details #languages .langDiv {
+  display: inline-block;
+}
+
+
+/*-- Moviepage AKA Styles -- */
+
+.akaColorRowInit {
+  padding: 7px;
+  margin-left: 20px;
+  color: #333;
+  font-size: 13px;
+}
+
+.akaColorRowNone {
+  display: none;
+}
+
+.akaCountry {
+  width: 200px;
+  display: inline-block;
+}
+
+.akaTitle {
+  width: 440px;
+  display: inline-block;
+}
+
+#details #aka a {
+  cursor: pointer;
+}
+
+#details #aka {
+  margin-top: 8px;
+  border-top: 1px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
+  padding-top: 10px;
+  padding-bottom: 8px;
+}
+
+
+/*----------------------- Moviepage Did you know Styles ------------------------------ */
+#didYouKnow {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px;
+  padding: 20px 20px 10px 20px;
+  background-color: #ffffff;
+}
+
+#didYouKnow #didYouKnowDiv1 {
+  margin-bottom: 13px;
+  padding-left: 0px;
+}
+
+#didYouKnow #didYouKnowDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#didYouKnow a {
+  cursor: pointer;
+}
+
+#didYouKnow h4 {
+  margin: 0px 0px 10px 0px;
+}
+
+.initArrowRight {
+  cursor: pointer;
+  background-image: url('arrowRight.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+.initArrowLeft {
+  cursor: pointer;
+  background-image: url('arrowLeft.png');
+  background-position: right center;
+  background-repeat: no-repeat;
+}
+
+
+/*-- Moviepage Trivia Styles -- */
+.triviaInit {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.triviaNone {
+  display: none;
+}
+
+#didYouKnow #triviaBase {
+  margin-bottom: 15px;
+}
+
+#didYouKnow #trivia {
+  font-weight: initial;
+  color: rgba(0,0,0,.87);
+  font-size: 13px;
+}
+
+#didYouKnow #trivia div {
+  padding: 16px 24px 16px 24px;
+  line-height: 140%;
+}
+
+
+/*-- Moviepage Quotes Styles -- */
+.quotesInit {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.quotesNone {
+  display: none;
+  font-size: 13px;
+}
+
+#didYouKnow #quotesBase {
+  margin-bottom: 15px;
+}
+
+#didYouKnow #quotes {
+  font-weight: initial;
+  color: rgba(0,0,0,.87);
+  font-size: 13px;
+}
+
+#didYouKnow #quotes div {
+  padding: 16px 24px 16px 24px;
+  line-height: 140%;
+}
+
+#didYouKnow .quotesName {
+  font-weight: bold;
+  color: #136CB2;
+}
+
+#morequotes {
+  margin-top: 10px;
+  margin-left: 2px;
+  line-height: initial;
+}
+
+
+/*-- Moviepage Alternate Versions Styles -- */
+.alternateversionsInit {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.alternateversionsNone {
+  display: none;
+  font-size: 13px;
+}
+
+#didYouKnow #alternateversionsBase {
+  margin-bottom: 15px;
+}
+
+#didYouKnow #alternateversions {
+  font-weight: initial;
+  color: rgba(0,0,0,.87);
+  font-size: 13px;
+}
+
+#didYouKnow #alternateversions div {
+  padding: 16px 24px 16px 24px;
+  line-height: 140%;
+  white-space: pre-wrap;
+}
+
+#morealternateversions {
+  margin-top: 10px;
+  margin-left: 2px;
+  line-height: initial;
+}
+
+
+/*-- Moviepage Soundtrack Styles -- */
+.soundtracksInit {
+  background-color: #ffffff;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.soundtracksNone {
+  display: none;
+  font-size: 13px;
+}
+
+#didYouKnow #soundtracksBase {
+  margin-bottom: 15px;
+}
+
+#didYouKnow #soundtracks {
+  font-weight: initial;
+  color: rgba(0,0,0,.87);
+  font-size: 13px;
+}
+
+#didYouKnow .soundtracksName {
+  font-weight: bold;
+  color: #136CB2;
+}
+
+#didYouKnow .soundtracksQuotes {
+  color: #136CB2;
+}
+
+#didYouKnow #soundtracks div {
+  padding: 16px 24px 16px 24px;
+  line-height: 140%;
+}
+
+#moresoundtracks {
+  margin-top: 10px;
+  margin-left: 2px;
+  line-height: initial;
+}
+
+
+/*----------------------- media Styles ------------------------------ */
+#media {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px;
+  padding: 20px 20px 24px 20px;
+  background-color: #ffffff;
+}
+
+#media #mediaDiv1 {
+  margin-bottom: 13px;
+  padding-left: 0px;
+}
+
+#media #mediaDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+#media #mediaDiv2 {
+  width: 50%;
+  float: left;
+}
+
+#media #mediaDiv2 .moviepage_media {
+  width: 100%;
+}
+
+#media #mediaDiv2 .moviepage_media_span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #136CB2;
+  float: none;
+  margin-left: 10px;
+}
+
+#media #mediaDiv2 #mediaDiv2Span1 {
+  margin-left: 10px;
+}
+
+#media #mediaDiv2 #mediaDiv2Span2 {
+  color: #00d800;
+}
+
+#media #mediaDiv2 #mediaDiv2Span3 {
+  color: red;
+}
+
+#media #mediaDiv2 #mediaDiv2_Div {
+  color: #2785c9;
+}
+
+#media #mediaDiv3 {
+  line-height: 140%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#media #mediaDiv3 div {
+  border-top: 1px solid #E8E8E8;
+  margin-left: 105px;
+  margin-top: -12px;
+}
+
+#media #mediaDiv3 h4 {
+  color: #424242;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/*----------------------- Extra Media Styles ------------------------------ */
+#media2 {
+  float: left;
+  margin-top: -35px;
+  padding-left: 15px;
+  background-color: #ffffff;
+}
+
+#media2 #media2Div1 {
+  margin-bottom: 13px;
+  margin-left: 2px;
+  padding-left: 0px;
+  padding-top: 0px;
+  width: 85px;
+}
+
+#media2 #media2Border {
+  float: right;
+  width: 600px;
+  border: 0;
+  height: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-style: dotted;
+  margin: -18px 0px 0px 0px;
+}
+
+#media2 #media2Div1 H2 {
+  font-weight: normal;
+  font: 18px Arial,sans-serif;
+}
+
+#media2 #media2Div2 .moviepage_media {
+  width: 100%;
+}
+
+#media2 #media2Div2 .moviepage_media_span {
+  font-size: 12px;
+  font-weight: normal;
+  color: #136CB2;
+  float: none;
+  margin-left: 10px;
+}
+
+#media2 #media2Div2 #media2Div2Span1 {
+  margin-left: 10px;
+}
+
+#media2 #media2Div2 #media2Div2Span2 {
+  color: #00d800;
+}
+
+#media2 #media2Div2 #media2Div2Span3 {
+  color: red;
+}
+
+#media2 #media2Div2 #media2Div2_Div {
+  color: #2785c9;
+}
+
+#media2 #media2Div3 {
+  line-height: 140%;
+  font-family: Verdana, Arial, sans-serif;
+  color: #333;
+  font-size: 13px;
+  float: left;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#media2 #media2Div3 div {
+  border-top: 1px solid #E8E8E8;
+  margin-left: 105px;
+  margin-top: -12px;
+}
+
+#media2 #media2Div3 h4 {
+  color: #424242;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+
+/*----------------------- Youtube embeded player Styles ------------------------------ */
+
+#trailer {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px 0px -2px 0px;
+  padding: 44px 20px 24px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#trailer #trailerDiv1 {
+  margin-bottom: 13px;
+  margin-left: 2px;
+  padding-left: 0px;
+  padding-top: 0px;
+  width: 85px;
+  text-align: left;
+}
+
+#trailer #trailerDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+  margin-bottom: 20px;
+}
+
+#trailer #trailerDiv2 {
+  display: initial;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  width: 674px;
+  font-size: 8px;
+  color: white;
+}
+
+#trailer #trailerDiv2 img {
+  height: 150px;
+}
+
+#trailer #trailerDiv2 .trailerFull {
+  cursor: pointer;
+  float: left;
+  padding-right: 14px;
+}
+#trailer #trailerDiv2 .trailerFull:hover{
+  filter: brightness(93%);
+  transition: opacity 0.35s;
+}
+
+#trailer #trailerDiv1 iframe {
+  border: none;
+}
+
+#trailer #trailerDiv1 button{
+  margin-left: 0px;
+  margin-top: 5px;
+  margin-bottom: -25px;
+  color: #136CB2;
+  border: 1px solid #CCCCCC;
+  border-radius: 1rem;
+  padding: 2px 10px 5px 10px;
+  background-color: #FFFFFF;
+}
+
+#trailer #trailerDiv1 button:hover {
+  text-decoration: none;
+  background-color: #CCCCCC;
+  color: #2E2020;
+}
+
+#trailer #trailerDiv1 #playerDiv{
+  margin: 0px -2px 0px;
+}
+
+#trailer #trailerDiv2 .invalidId {
+  text-align: center;
+  vertical-align: middle;
+  display: table-cell;
+  color: white;
+  opacity: 0.6;
+  height: 150px;
+  width: 200px;
+  background: #333333;
+  font-size: 14px;
+}
+
+
+/*----------------------- Main Photo Styles ------------------------------ */
+
+#mainphoto{
+  width: 674px;
+  float: left;
+  clear: left;
+  border-top: 1px solid #CCC;
+  margin: 0px 0px -2px 0px;
+  padding: 20px 20px 24px 20px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+#mainphoto #mainphotoDiv1 {
+  margin-bottom: 13px;
+  margin-left: 2px;
+  padding-left: 0px;
+  padding-top: 0px;
+  width: 85px;
+  text-align: left;
+}
+
+#mainphoto #mainphotoDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+}
+
+#mainphoto #mainphotoDiv2 {
+  display: initial;
+  text-align: left;
+  margin: 0px;
+  padding: 0px;
+  width: 674px;
+  font-size: 8px;
+  color: white;
+}
+
+/*----------------------- updateAll Styles ------------------------------ */
+#updateReturn {
+  background-color: #a2ffb8;
+  margin-top: 0px;
+  padding: 20px 0px;
+}
+
+#updateReturn ul {
+  margin: 0px 0px 0px 40px;
+}
+
+#updateForm {
+  float: left;
+  margin: 0px;
+  padding: 0px 20px 20px 20px;
+  width: 96.2%;
+}
+
+#updateForm #div1 {
+  float: left;
+  width: 100%;
+  margin-top: 6px;
+}
+
+#updateForm #div2 {
+  margin-top: 0px;
+  float: left;
+  width: 100%;
+}
+
+#updateForm #div2 button {
+  margin-top: 10px;
+}
+
+#updateForm #div2 H2 {
+  color: #664700;
+  font-weight: normal;
+}
+
+#column {
+  width: 100%;
+}
+
+#column .columns {
+  float: left;
+  width: 23%;
+  margin-top: 20px;
+}
+
+#column .imagesColumn {
+  float: left;
+  width: 30%;
+  margin-top: 20px;
+}
+
+#column .columns H3 {
+  color: #3399fa;
+  font-weight: normal;
+}
+
+#column .columns label div {
+  margin-left: 30px;
+  margin-top: -19px;
+}
+
+#column .columns label span {
+  margin-left: 30px;
+}
+
+#column .columns .main {
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+#movieFooter {
+  height: 30px;
+  width: 100%;
+  margin-bottom: 0px;
+  float: left;
+  border-top: 1px solid #CCC;
+  background-color: #ededec;
+}
+
+/*----------------------- Recommendations Styles */
+#recommendations {
+  width: 674px;
+  float: left;
+  clear: left;
+  margin: 0px;
+  margin-bottom: 0px;
+  padding: 20px 20px 24px 20px;
+  background-color: #ffffff;
+}
+
+#recommendations #recommendationsDiv1 {
+  margin-bottom: 13px;
+  padding-left: 0px;
+}
+
+#recommendations #recommendationsDiv1 H2 {
+  font-weight: normal;
+  font: 24px Arial,sans-serif;
+  padding-left: 5px;
+  border-left: 4px solid #f5c518;
+}
+
+.carousel__item {
+  height: 350px;
+}
+
+.carousel__item .rec-rating img {
+  height: 14px;
+  width: 14px;
+}
+
+.carousel__item .rec-rating {
+  margin: 10px;
+}
+
+.carousel__item .rec-rating span {
+  margin-left: 5px;
+  font-size: 15px;
+  color: rgba(0,0,0,0.54);
+}
+
+.carousel__item .rec-title {
+  margin: 10px;
+  width: 120px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  height: 75px;
+}
+
+.carousel__item .rec-title a{
+  color: #000000;
+}
+
+.carousel__item .rec-img {
+  font-size: 14px;
+  box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2),0px 2px 2px 0px rgba(0,0,0,0.14),0px 1px 5px 0px rgba(0,0,0,0.12);
+  border-radius: 4px;
+  width: 140px;
+  margin-bottom: 4px;
+}
+
+.carousel__item .rec-img .rec-image img {
+  width: 140px;
+  height: 207px;
+}
+
+.carousel__item .rec-img .rec-image:hover {
+  filter: brightness(93%);
+  transition: opacity 0.35s;
+}
+
+.bluray {
+  color: #03a9f4;
+}
+
+.dvd {
+  color: #000000;
+}
+
+.mkv {
+  color: #f77b00;
+}
+
+.formatDefault {
+  color: #333333;
+}
+
+.blurayIcon {
+  background-color: #03a9f4;
+}
+
+.dvdIcon {
+  background-color: #000000;
+}
+
+.mkvIcon {
+  background-color: #f77b00;
+}
+
+.formatDefaultIcon {
+  background-color: #8A8A8A;
+}
