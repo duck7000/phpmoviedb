@@ -1,9 +1,10 @@
 <?php
 
 #############################################################################
-# IMDBPHP                              (c) Giorgos Giagas & Itzchak Rehberg #
+# IMDBPHP6                             (c) Giorgos Giagas & Itzchak Rehberg #
 # written by Giorgos Giagas                                                 #
 # extended & maintained by Itzchak Rehberg <izzysoft AT qumran DOT org>     #
+# written extended & maintained by Ed                                       #
 # http://www.izzysoft.de/                                                   #
 # ------------------------------------------------------------------------- #
 # This program is free software; you can redistribute and/or modify it      #
@@ -12,12 +13,13 @@
 
 namespace Imdb;
 
+use Psr\SimpleCache\CacheInterface;
+
 /**
  * A person on IMDb
  * @author Izzy (izzysoft AT qumran DOT org)
  * @author Ed
  * @copyright 2008 by Itzchak Rehberg and IzzySoft
- * @copyright 2023 by Ed
  */
 class Person extends MdbBase
 {
@@ -45,10 +47,12 @@ class Person extends MdbBase
 
     /**
      * @param string $id IMDBID to use for data retrieval
+     * @param Config $config OPTIONAL override default config
+     * @param CacheInterface $cache OPTIONAL override the default cache with any PSR-16 cache.
      */
-    public function __construct($id)
+    public function __construct($id, Config $config = null, CacheInterface $cache = null)
     {
-        parent::__construct();
+        parent::__construct($config, $cache);
         $this->setid($id);
     }
 
@@ -81,6 +85,7 @@ EOF;
      * @param boolean $size (optional) small:  thumbnail (67x98, default)
      *                                 medium: image size (621x931)
      *                                 large:  image maximum size
+     * @note if small or medium url 404 or 401 the full image url is returned!
      * @return mixed photo (string url if found, empty string otherwise)
      * @see IMDB person page / (Main page)
      */
@@ -101,9 +106,17 @@ EOF;
                 $img = str_replace('.jpg', '', $data->name->primaryImage->url);
                 if ($size == "small") {
                     $this->main_photo = $img . 'QL100_SY98_.jpg';
+                    $headers = get_headers($this->main_photo);
+                    if (substr($headers[0], 9, 3) == "404" || substr($headers[0], 9, 3) == "401") {
+                        $this->main_photo = $data->name->primaryImage->url;
+                    }
                 }
                 if ($size == "medium") {
                     $this->main_photo = $img . 'QL100_SY931_.jpg';
+                    $headers = get_headers($this->main_photo);
+                    if (substr($headers[0], 9, 3) == "404" || substr($headers[0], 9, 3) == "401") {
+                        $this->main_photo = $data->name->primaryImage->url;
+                    }
                 }
                 if ($size == "large") {
                     $this->main_photo = $data->name->primaryImage->url;
@@ -310,7 +323,7 @@ EOF;
 
     /** Get spouse(s)
      * @return array [0..n] of array spouses [string imdb, string name, array from,
-     *         array to, string commentjs, int children where from/to are array
+     *         array to, string comment, int children] where from/to are array
      *         [day,month,mon,year] (MonthName is the name, MonthInt the number of the month),
      * @see IMDB person page /bio
      */
@@ -546,7 +559,7 @@ EOF;
     #----------------------------------------------------------------[ Salary ]---
 
     /** Get the salary list
-     * @return array salary array[0..n] of array [strings imdb, titel, year, amount, currency, array comments[]]
+     * @return array salary array[0..n] of array [strings imdb, name, year, amount, currency, array comments[]]
      * @see IMDB person page /bio
      */
     public function salary()

@@ -12,11 +12,13 @@
 
 namespace Imdb;
 
+use Psr\SimpleCache\CacheInterface;
+
 /**
  * A title on IMDb
  * @author Georgos Giagas
  * @author Izzy (izzysoft AT qumran DOT org)
- * @author Ed 
+ * @author Ed
  * @copyright (c) 2002-2004 by Giorgos Giagas and (c) 2004-2009 by Itzchak Rehberg and IzzySoft
  */
 class Title extends MdbBase
@@ -69,10 +71,12 @@ class Title extends MdbBase
 
     /**
      * @param string $id IMDb ID. e.g. 285331 for https://www.imdb.com/title/tt0285331/
+     * @param Config $config OPTIONAL override default config
+     * @param CacheInterface $cache OPTIONAL override the default cache with any PSR-16 cache.
      */
-    public function __construct($id)
+    public function __construct($id, Config $config = null, CacheInterface $cache = null)
     {
-        parent::__construct();
+        parent::__construct($config, $cache);
         $this->setid($id);
     }
 
@@ -1534,6 +1538,30 @@ EOF;
             }
         }
         return $this->season_episodes;
+    }
+
+    #-----------------------------------------------------------[ IsOngoing TV Series ]---
+     /**
+     * Boolean flag if this is a still running tv series or ended
+     * @return boolean: false if ended, true if still running or null (not a tv series)
+     */
+    public function isOngoing()
+    {
+        $query = <<<EOF
+query IsOngoing(\$id: ID!) {
+  title(id: \$id) {
+    episodes {
+      isOngoing
+    }
+  }
+}
+EOF;
+
+        $data = $this->graphql->query($query, "IsOngoing", ["id" => "tt$this->imdbID"]);
+        if (isset($data->title->episodes) && $data->title->episodes != null) {
+            $this->isOngoing = isset($data->title->episodes->isOngoing) ? $data->title->episodes->isOngoing : null;
+        }
+        return $this->isOngoing;
     }
 
     #===========================================================[ /goofs page ]===
